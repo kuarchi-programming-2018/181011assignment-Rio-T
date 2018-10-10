@@ -21,8 +21,10 @@
 # おみくじプログラム
 
 import random
-line = input().rstrip()
-
+line = input().rstrip().split(",")
+num=len(line)
+attack=random.randrange(num)
+print(line[attack])
 # 今回は自力で全部書いてみよう！
 
 # カンマで分割して、リストに代入
